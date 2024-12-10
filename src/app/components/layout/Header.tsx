@@ -7,6 +7,7 @@ import LanguageSelectBox from "./LanguageSelectBox";
 
 const Header = () => {
   const { toggle }: any = useContext(MenuContext);
+
   return (
     <div className="bg-white flex justify-between items-center px-4 h-12 mb-4">
       <div>Brand</div>

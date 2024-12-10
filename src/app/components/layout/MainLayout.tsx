@@ -1,17 +1,23 @@
-import React from "react";
+"use client"
+import React, { useContext } from "react";
 import Header from "./Header";
 import SideBar from "./SideBar";
+import { MenuContext } from "../../context/MenuContext";
+
 
 const MainLayout = ({ children }: any) => {
+  const { open }: any = useContext(MenuContext);
   return (
-    <div className="bg-gray-200 w-screen min-h-screen">
-      <Header />
-      <div className="flex justify-start items-start">
+    <div className="bg-green-200 min-h-screen">
         <SideBar/>
-        <main className="flex-1">{children}</main>
+
+      <div className={`${open ? " max-lg:blur-xl" : "blur-0"}`}>
+      <Header />
+        <main className="lg:ml-[280px]">{children}</main>
       </div>
+       
     </div>
   );
 };
 
-export default MainLayout;
+export default MainLayout;  
