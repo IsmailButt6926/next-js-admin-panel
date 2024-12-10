@@ -6,7 +6,7 @@ import { FaAngleRight, FaCheck, FaCheckDouble } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { GrProjects } from "react-icons/gr";
 import { SiHelpscout, SiSinglestore } from "react-icons/si";
-import { MenuContext } from "../context/MenuContext";
+import { MenuContext } from "../../context/MenuContext";
 
 const SideBar = () => {
   const { open }: any = useContext(MenuContext);

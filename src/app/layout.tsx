@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MainLayout from "./components/MainLayout";
+import MainLayout from "./components/layout/MainLayout";
+import 'flag-icons/css/flag-icons.min.css';
 import MenuContextProvider from "./context/MenuContext"
 export const metadata: Metadata = {
   title: "Create Next App",
