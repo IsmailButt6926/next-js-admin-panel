@@ -1,4 +1,4 @@
-import HorizontalScrollBar from "@/app/components/screens/HorizontalScrollBar";
+import HorizontalScrollBar from "@/app/components/HorizontalScrollBar";
 import React from "react";
 
 const HorizontalScollBarPage = () => {
@@ -43,7 +43,7 @@ const HorizontalScollBarPage = () => {
   })
   console.log("users :",  users)
   return (
-    <div>
+    <div className='bg-white rounded-lg mx-4 p-4'>
       <h1 className="text-blue-800 text-2xl">Youtube categories</h1>
       <HorizontalScrollBar >
         {

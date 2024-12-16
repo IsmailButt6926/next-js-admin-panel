@@ -58,9 +58,13 @@ const SideBar = () => {
             <FaAngleRight />
             </div>
             <ul className="ml-8 mt-4">
-              <li className="flex justify-center items-center gap-3">
+              <li className="flex justify-start items-center gap-3 my-1">
                 <SiSinglestore/>
                 <Link href={"/complex/horizontal-scrollbar"}  onClick={clodeSideBarHanlder}>Ho-Scrollbar</Link>
+              </li>
+              <li className="flex justify-start items-center gap-3 my-1">
+                <SiSinglestore/>
+                <Link href={"/complex/tabs"}  onClick={clodeSideBarHanlder}>Tabs</Link>
               </li>
             </ul>
           </li>
