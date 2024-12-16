@@ -51,10 +51,18 @@ const SideBar = () => {
             </ul>
           </li>
 
-          <li className="flex items-center justify-start hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2">
+          <li className="flex flex-col items-start justify-start hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2">
+            <div className="w-full flex flex-row justify-start items-center">
             <FaCheckDouble className="mr-2" />
             <h3 className="flex-1">Complex</h3>
             <FaAngleRight />
+            </div>
+            <ul className="ml-8 mt-4">
+              <li className="flex justify-center items-center gap-3">
+                <SiSinglestore/>
+                <Link href={"/complex/horizontal-scrollbar"}  onClick={clodeSideBarHanlder}>Ho-Scrollbar</Link>
+              </li>
+            </ul>
           </li>
 
           <li className="flex items-center justify-start hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2">
