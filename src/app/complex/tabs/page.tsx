@@ -1,18 +1,19 @@
 import Tabs from '@/app/components/Tabs';
 import React from 'react'
 
-const Tabspage = () => {
+const TabsPage = () => {
   return (
     <div className='bg-white rounded-lg mx-4 p-4'>
     <h1>Tabs page</h1>    
     <br/>
-
+     
+     {/* Tabs Component   */}
     <Tabs items={items} />
     </div>
   )
 }
 
-export default Tabspage
+export default TabsPage
 
 const items = [
     {
