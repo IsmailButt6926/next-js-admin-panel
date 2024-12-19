@@ -70,6 +70,10 @@ const SideBar = () => {
                 <SiSinglestore/>
                 <Link href={"/complex/slider"} >Slider</Link>
               </li>
+              <li className="flex justify-start items-center gap-3 my-1">
+                <SiSinglestore/>
+                <Link href={"/complex/multi-step-form"} >Multi Step Form</Link>
+              </li>
             </ul>
           </li>
 
